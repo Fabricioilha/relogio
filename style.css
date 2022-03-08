@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quadro{
+    width: 1000px;
+    height: 600px;
+}
+.analogico{
+    margin: auto;
+    background-color: brown;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bola{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #fff;
+}
+.linha{
+    position: absolute;
+    height: 10px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.b{
+    transform: rotate(30deg);
+}
+.c{
+    transform: rotate(60deg);
+}
+.d{
+    transform: rotate(90deg);
+}
+.e{
+    transform: rotate(120deg);
+}
+.f{
+    transform: rotate(150deg);
+}
+.ponta{
+    width: 20px;
+    height: 10px;
+    background-color: white;
+}
+.digital{
+    margin: auto;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.bolinha{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(19, 7, 7);
+    border-radius: 50%;
+}
+
+
+/* ----------- Ponteiros-----------------------*/
+
+#p-hora,#p-min,#p-seg{
+    position: absolute;
+    width: 380px;
+    display: flex;
+
+}
+.vazio{
+    height: 10px;
+    width: 50%;
+    align-items: center;
+}
+.visivel{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#p-hora{
+    height: 10px;
+}
+#p-min{
+    height: 10px;
+}
+#p-seg{
+    height: 5px;
+}
+
+#p-hora .visivel{
+    width: 110px;
+}
+
+#p-seg .visivel{
+    width: 300px;
+    background-color: chartreuse;
+}
+#p-min .visivel{
+    width: 150px;
+}
